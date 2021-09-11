@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+          <h1 id="title">Survey Form</h1>
+          <p id="description">Please select preferred options</p>
+        </header>
+        <main>
+          <form id="survey-form">
+            <!--Text Input-->
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter name" required>
+            <br>
+            <!--Email Input-->
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Email address" required>
+            <br>
+            <!--Number Input-->
+            <label for="number" id="number-label">Number</label>
+            <input type="number" id="number" min="1" max="120" placeholder="Age">
+            <br>
+            <!--Dropdown/Select Input-->
+            <label for="pet-select">Which pet do you have:</label>
+            <select name="pets" id="dropdown">
+              <option value="">--Please choose an option--</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="hamster">Hamster</option>
+              <option value="parrot">Parrot</option>
+              <option value="spider">Spider</option>
+              <option value="goldfish">Goldfish</option>
+              <option value="none">None</option>
+            </select>
+            <!--Radio Buttons-->
+            <fieldset>
+                <legend>Pick a favorite color</legend>
+                <input type="radio" name="color" id="red" value="red">
+                <label for="red">Red</label>
+                <input type="radio" name="color" id="orange" value="orange">
+                <label for="orange">Orange</label>
+                <input type="radio" name="color" id="yellow" value="yellow">
+                <label for="yellow">Yellow</label>
+                <input type="radio" name="color" id="green" value="green">
+                <label for="green">Green</label>
+                <input type="radio" name="color" id="blue" value="blue">
+                <label for="blue">Blue</label>
+                <input type="radio" name="color" id="violet" value="violet">
+                <label for="violet">Violet</label>
+            </fieldset>
+            <!--Checkboxes-->
+            <fieldset>
+                <legend>Which foods do you like?</legend>
+                <input type="checkbox" name="favorite-food" id="italian" value="italian">
+                <label for="italian">Italian</label>
+                <input type="checkbox" name="favorite-food" id="mexican" value="mexican">
+                <label for="mexican">Mexican</label>
+                <input type="checkbox" name="favorite-food" id="chinese" value="chinese">
+                <label for="chinese">Chinese</label>
+                <input type="checkbox" name="favorite-food" id="american" value="american">
+                <label for="american">American</label>
+                <input type="checkbox" name="favorite-food" id="french" value="french">
+                <label for="french">French</label>
+                <input type="checkbox" name="favorite-food" id="texmex" value="texmex">
+                <label for="texmex">TexMex</label>
+            </fieldset>
+            <br>
+            <!--Textarea-->
+            <label for="comments">Please add additional comments</label>
+            <textarea name="comments" id="comments" cols="100" rows="10"></textarea>
+            <br>
+            <!--Submit Button-->
+            <button type="submit" id="submit">Submit</button>
+          </form>
+        </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

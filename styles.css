@@ -1,0 +1,22 @@
+#container {
+    background-image: url("https://i.ibb.co/mGWwpJd/clipboard-paper-clip-business.jpg");
+    background-size: 100%;
+    min-height: 100vh;
+    min-width: 290px;
+    padding-top: 24vw;
+  }
+  header {
+    text-align: center;
+    width: 75%;
+    margin: auto;
+  }
+  header h1 {
+    margin-bottom: 0;
+  }
+  header p {
+    margin-top: 0;
+  }
+  #survey-form {
+    width: 75%;
+    margin: auto;
+  }
